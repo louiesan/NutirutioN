@@ -1,15 +1,14 @@
-import { headers } from "next/headers";
 import { Search } from "../users/components/Search";
 import { ProductWrapper } from "./components/ProductWrapper";
 import { ProductManage } from "./components/ProductManage";
-import { apiUrl } from "@/lib/siteUrl";
+import { ConnectDB } from "@/lib/database";
+import Product from "@/lib/models/Product";
+
+export const dynamic = "force-dynamic";
 
 export default async function products() {
-  const res = await fetch(apiUrl("/api/products"), {
-    headers: await headers(),
-  });
-  const data = await res.json();
-  const products = data.products;
+  await ConnectDB(process.env.MONGO_URI!);
+  const products = JSON.parse(JSON.stringify(await Product.find({})));
 
   return (
     <main>

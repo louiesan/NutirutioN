@@ -1,30 +1,22 @@
-import { headers } from "next/headers";
 import GoalsManager from "./components/GoalsManager";
-import { apiUrl } from "@/lib/siteUrl";
+import { ConnectDB } from "@/lib/database";
+import { Goals } from "@/lib/models/Goals";
+import Product from "@/lib/models/Product";
+
+export const dynamic = "force-dynamic";
 
 export default async function GoalsAdminPage() {
-  const requestHeaders = await headers();
+  await ConnectDB(process.env.MONGO_URI!);
 
-  const [goalsResponse, productsResponse] = await Promise.all([
-    fetch(apiUrl("/api/goals"), {
-      cache: "no-store",
-      headers: requestHeaders,
-    }),
-    fetch(apiUrl("/api/products"), {
-      cache: "no-store",
-      headers: requestHeaders,
-    }),
+  const [goals, products] = await Promise.all([
+    Goals.find({}),
+    Product.find({}),
   ]);
-
-  const goals = await goalsResponse.json();
-  const productsData = await productsResponse.json();
 
   return (
     <GoalsManager
-      initialGoals={Array.isArray(goals) ? goals : []}
-      initialProducts={
-        Array.isArray(productsData?.products) ? productsData.products : []
-      }
+      initialGoals={JSON.parse(JSON.stringify(goals))}
+      initialProducts={JSON.parse(JSON.stringify(products))}
     />
   );
 }
