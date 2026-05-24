@@ -1,0 +1,1573 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Whey Protein Gold 2lb",
+      "category_id": 1,
+      "price": 49.99,
+      "description": "High-quality whey protein for muscle growth and recovery.",
+      "image": "/images/whey-gold.png",
+      "stock": 25
+    },
+    {
+      "id": 2,
+      "name": "Whey Protein Gold 5lb",
+      "category_id": 1,
+      "price": 89.99,
+      "description": "Premium whey formula with fast absorption.",
+      "image": "/images/whey-5lb.png",
+      "stock": 18
+    },
+    {
+      "id": 3,
+      "name": "Whey Isolate Pure",
+      "category_id": 2,
+      "price": 59.99,
+      "description": "Ultra-filtered isolate with low carbs and fat.",
+      "image": "/images/isolate-pure.png",
+      "stock": 30
+    },
+    {
+      "id": 4,
+      "name": "Hydro Isolate Pro",
+      "category_id": 2,
+      "price": 69.99,
+      "description": "Hydrolyzed isolate for rapid digestion.",
+      "image": "/images/hydro-isolate.png",
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "name": "Mass Gainer Extreme",
+      "category_id": 3,
+      "price": 74.99,
+      "description": "High-calorie formula for serious bulking.",
+      "image": "/images/mass-extreme.png",
+      "stock": 12
+    },
+    {
+      "id": 6,
+      "name": "Lean Mass Builder",
+      "category_id": 3,
+      "price": 64.99,
+      "description": "Balanced mass gainer for lean muscle.",
+      "image": "/images/lean-mass.png",
+      "stock": 20
+    },
+    {
+      "id": 7,
+      "name": "Creatine Monohydrate 300g",
+      "category_id": 4,
+      "price": 24.99,
+      "description": "Pure micronized creatine for strength.",
+      "image": "/images/creatine.png",
+      "stock": 40
+    },
+    {
+      "id": 8,
+      "name": "Creatine HCL",
+      "category_id": 4,
+      "price": 29.99,
+      "description": "Highly soluble creatine for better absorption.",
+      "image": "/images/creatine-hcl.png",
+      "stock": 22
+    },
+    {
+      "id": 9,
+      "name": "BCAA 2:1:1",
+      "category_id": 5,
+      "price": 27.99,
+      "description": "Supports recovery and reduces fatigue.",
+      "image": "/images/bcaa.png",
+      "stock": 35
+    },
+    {
+      "id": 10,
+      "name": "EAA Complex",
+      "category_id": 5,
+      "price": 34.99,
+      "description": "Complete essential amino acids formula.",
+      "image": "/images/eaa.png",
+      "stock": 19
+    },
+
+    {
+      "id": 11,
+      "name": "Pre-Workout Blast",
+      "category_id": 6,
+      "price": 39.99,
+      "description": "Energy and focus before training.",
+      "image": "/images/preworkout.png",
+      "stock": 28
+    },
+    {
+      "id": 12,
+      "name": "Stim-Free Pre-Workout",
+      "category_id": 6,
+      "price": 36.99,
+      "description": "Pump formula without caffeine.",
+      "image": "/images/preworkout-stimfree.png",
+      "stock": 17
+    },
+    {
+      "id": 13,
+      "name": "Fat Burner ThermoX",
+      "category_id": 7,
+      "price": 44.99,
+      "description": "Thermogenic fat loss support.",
+      "image": "/images/fatburner.png",
+      "stock": 14
+    },
+    {
+      "id": 14,
+      "name": "L-Carnitine Liquid",
+      "category_id": 7,
+      "price": 31.99,
+      "description": "Supports metabolism and fat transport.",
+      "image": "/images/carnitine.png",
+      "stock": 26
+    },
+    {
+      "id": 15,
+      "name": "Omega 3 Fish Oil",
+      "category_id": 8,
+      "price": 19.99,
+      "description": "Heart and joint support supplement.",
+      "image": "/images/omega3.png",
+      "stock": 45
+    },
+    {
+      "id": 16,
+      "name": "Multivitamin Sport",
+      "category_id": 8,
+      "price": 21.99,
+      "description": "Daily vitamins for active individuals.",
+      "image": "/images/multivitamin.png",
+      "stock": 33
+    },
+    {
+      "id": 17,
+      "name": "ZMA Recovery",
+      "category_id": 8,
+      "price": 18.99,
+      "description": "Supports sleep and testosterone levels.",
+      "image": "/images/zma.png",
+      "stock": 20
+    },
+    {
+      "id": 18,
+      "name": "Casein Protein Night",
+      "category_id": 1,
+      "price": 54.99,
+      "description": "Slow-digesting protein for overnight recovery.",
+      "image": "/images/casein.png",
+      "stock": 16
+    },
+    {
+      "id": 19,
+      "name": "Vegan Protein Blend",
+      "category_id": 1,
+      "price": 52.99,
+      "description": "Plant-based protein for clean nutrition.",
+      "image": "/images/vegan-protein.png",
+      "stock": 23
+    },
+    {
+      "id": 20,
+      "name": "Collagen Peptides",
+      "category_id": 8,
+      "price": 29.99,
+      "description": "Supports skin, hair, and joints.",
+      "image": "/images/collagen.png",
+      "stock": 27
+    },
+
+    {
+      "id": 21,
+      "name": "Testosterone Booster",
+      "category_id": 9,
+      "price": 49.99,
+      "description": "Natural support for testosterone levels.",
+      "image": "/images/testo.png",
+      "stock": 11
+    },
+    {
+      "id": 22,
+      "name": "Nitric Oxide Booster",
+      "category_id": 9,
+      "price": 37.99,
+      "description": "Enhances pump and blood flow.",
+      "image": "/images/nitric.png",
+      "stock": 18
+    },
+    {
+      "id": 23,
+      "name": "Electrolyte Hydration Mix",
+      "category_id": 10,
+      "price": 22.99,
+      "description": "Replenishes minerals during workouts.",
+      "image": "/images/electrolyte.png",
+      "stock": 38
+    },
+    {
+      "id": 24,
+      "name": "Protein Bars Pack",
+      "category_id": 11,
+      "price": 24.99,
+      "description": "High-protein snack bars.",
+      "image": "/images/protein-bar.png",
+      "stock": 50
+    },
+    {
+      "id": 25,
+      "name": "Energy Gel Pack",
+      "category_id": 11,
+      "price": 19.99,
+      "description": "Quick energy for endurance athletes.",
+      "image": "/images/energy-gel.png",
+      "stock": 42
+    },
+
+    {
+      "id": 26,
+      "name": "Shaker Bottle Pro",
+      "category_id": 12,
+      "price": 9.99,
+      "description": "Leak-proof shaker bottle.",
+      "image": "/images/shaker.png",
+      "stock": 60
+    },
+    {
+      "id": 27,
+      "name": "Gym Gloves",
+      "category_id": 12,
+      "price": 14.99,
+      "description": "Improves grip and comfort.",
+      "image": "/images/gloves.png",
+      "stock": 32
+    },
+    {
+      "id": 28,
+      "name": "Lifting Straps",
+      "category_id": 12,
+      "price": 12.99,
+      "description": "Supports heavy lifts.",
+      "image": "/images/straps.png",
+      "stock": 29
+    },
+    {
+      "id": 29,
+      "name": "Resistance Bands Set",
+      "category_id": 12,
+      "price": 29.99,
+      "description": "Versatile training bands.",
+      "image": "/images/bands.png",
+      "stock": 21
+    },
+    {
+      "id": 30,
+      "name": "Gym Bag Pro",
+      "category_id": 12,
+      "price": 39.99,
+      "description": "Spacious and durable gym bag.",
+      "image": "/images/gymbag.png",
+      "stock": 14
+    },
+
+    {
+      "id": 31,
+      "name": "Carb Loader Formula",
+      "category_id": 3,
+      "price": 58.99,
+      "description": "Complex carbs for energy and bulk.",
+      "image": "/images/carb-loader.png",
+      "stock": 15
+    },
+    {
+      "id": 32,
+      "name": "Intra-Workout Fuel",
+      "category_id": 5,
+      "price": 33.99,
+      "description": "Supports endurance during training.",
+      "image": "/images/intra.png",
+      "stock": 20
+    },
+    {
+      "id": 33,
+      "name": "Glutamine Powder",
+      "category_id": 5,
+      "price": 25.99,
+      "description": "Muscle recovery support.",
+      "image": "/images/glutamine.png",
+      "stock": 31
+    },
+    {
+      "id": 34,
+      "name": "Joint Support Complex",
+      "category_id": 8,
+      "price": 26.99,
+      "description": "Promotes joint flexibility.",
+      "image": "/images/joint.png",
+      "stock": 18
+    },
+    {
+      "id": 35,
+      "name": "Immune Boost Formula",
+      "category_id": 8,
+      "price": 23.99,
+      "description": "Supports immune system health.",
+      "image": "/images/immune.png",
+      "stock": 27
+    },
+
+    {
+      "id": 36,
+      "name": "Protein Pancake Mix",
+      "category_id": 11,
+      "price": 18.99,
+      "description": "High-protein breakfast mix.",
+      "image": "/images/pancake.png",
+      "stock": 22
+    },
+    {
+      "id": 37,
+      "name": "Caffeine Tablets",
+      "category_id": 9,
+      "price": 14.99,
+      "description": "Quick energy boost.",
+      "image": "/images/caffeine.png",
+      "stock": 41
+    },
+    {
+      "id": 38,
+      "name": "Sleep Support Formula",
+      "category_id": 8,
+      "price": 21.99,
+      "description": "Improves sleep quality.",
+      "image": "/images/sleep.png",
+      "stock": 19
+    },
+    {
+      "id": 39,
+      "name": "Beef Protein Isolate",
+      "category_id": 1,
+      "price": 56.99,
+      "description": "Alternative protein source.",
+      "image": "/images/beef-protein.png",
+      "stock": 12
+    },
+    {
+      "id": 40,
+      "name": "Rice Protein Powder",
+      "category_id": 1,
+      "price": 47.99,
+      "description": "Hypoallergenic plant protein.",
+      "image": "/images/rice-protein.png",
+      "stock": 16
+    },
+
+    {
+      "id": 41,
+      "name": "Green Superfoods Blend",
+      "category_id": 8,
+      "price": 32.99,
+      "description": "Daily greens nutrition mix.",
+      "image": "/images/greens.png",
+      "stock": 24
+    },
+    {
+      "id": 42,
+      "name": "CLA Softgels",
+      "category_id": 7,
+      "price": 28.99,
+      "description": "Supports fat metabolism.",
+      "image": "/images/cla.png",
+      "stock": 20
+    },
+    {
+      "id": 43,
+      "name": "Protein Coffee Blend",
+      "category_id": 1,
+      "price": 34.99,
+      "description": "Protein + caffeine combo.",
+      "image": "/images/protein-coffee.png",
+      "stock": 17
+    },
+    {
+      "id": 44,
+      "name": "Hydration Tablets",
+      "category_id": 10,
+      "price": 15.99,
+      "description": "Electrolytes in tablet form.",
+      "image": "/images/hydration-tabs.png",
+      "stock": 36
+    },
+    {
+      "id": 45,
+      "name": "Peanut Butter Protein",
+      "category_id": 11,
+      "price": 16.99,
+      "description": "High-protein peanut spread.",
+      "image": "/images/pb-protein.png",
+      "stock": 25
+    },
+
+    {
+      "id": 46,
+      "name": "Beta Alanine Powder",
+      "category_id": 9,
+      "price": 23.99,
+      "description": "Reduces muscle fatigue.",
+      "image": "/images/beta-alanine.png",
+      "stock": 18
+    },
+    {
+      "id": 47,
+      "name": "Tribulus Extract",
+      "category_id": 9,
+      "price": 27.99,
+      "description": "Herbal performance support.",
+      "image": "/images/tribulus.png",
+      "stock": 13
+    },
+    {
+      "id": 48,
+      "name": "Protein Oats Mix",
+      "category_id": 11,
+      "price": 19.99,
+      "description": "Protein-enriched oats.",
+      "image": "/images/protein-oats.png",
+      "stock": 28
+    },
+    {
+      "id": 49,
+      "name": "Magnesium Complex",
+      "category_id": 8,
+      "price": 17.99,
+      "description": "Supports muscle relaxation.",
+      "image": "/images/magnesium.png",
+      "stock": 34
+    },
+    {
+      "id": 50,
+      "name": "Ultimate Bulk Stack",
+      "category_id": 3,
+      "price": 129.99,
+      "description": "Complete bulking supplement stack.",
+      "image": "/images/bulk-stack.png",
+      "stock": 10
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Protein",
+      "slug": "protein",
+      "description": "High-quality protein supplements for muscle growth and recovery.",
+      "image": "/categories/protein.png"
+    },
+    {
+      "id": 2,
+      "name": "Isolate",
+      "slug": "isolate",
+      "description": "Ultra-pure whey isolate for lean muscle building.",
+      "image": "/categories/isolate.png"
+    },
+    {
+      "id": 3,
+      "name": "Mass Gainers",
+      "slug": "mass",
+      "description": "High-calorie formulas for serious bulking phases.",
+      "image": "/categories/mass.png"
+    },
+    {
+      "id": 4,
+      "name": "Creatine",
+      "slug": "creatine",
+      "description": "Strength and power enhancement supplements.",
+      "image": "/categories/creatine.png"
+    },
+    {
+      "id": 5,
+      "name": "Amino Acids",
+      "slug": "amino",
+      "description": "BCAA, EAA, and recovery support formulas.",
+      "image": "/categories/amino.png"
+    },
+    {
+      "id": 6,
+      "name": "Pre Workout",
+      "slug": "preworkout",
+      "description": "Energy and focus boosters before training.",
+      "image": "/categories/preworkout.png"
+    },
+    {
+      "id": 7,
+      "name": "Fat Burners",
+      "slug": "fatburner",
+      "description": "Thermogenic and metabolism support products.",
+      "image": "/categories/fatburner.png"
+    },
+    {
+      "id": 8,
+      "name": "Supplements",
+      "slug": "supplements",
+      "description": "Vitamins, minerals, and daily health supplements.",
+      "image": "/categories/health.png"
+    },
+    {
+      "id": 9,
+      "name": "Performance",
+      "slug": "erformance",
+      "description": "Advanced performance and hormone support supplements.",
+      "image": "/categories/performance.png"
+    },
+    {
+      "id": 10,
+      "name": "Hydration",
+      "slug": "hydration",
+      "description": "Electrolytes and hydration solutions.",
+      "image": "/categories/hydration.png"
+    },
+    {
+      "id": 11,
+      "name": "Snacks",
+      "slug": "snacks",
+      "description": "High-protein snacks and healthy alternatives.",
+      "image": "/categories/snacks.png"
+    },
+    {
+      "id": 12,
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Gym accessories and fitness gear.",
+      "image": "/categories/accessories.png"
+    }
+  ],
+
+  "product": [
+    {
+      "name": "Mass Builder Pro",
+      "brand": "Titan Nutrition",
+      "category": "Protein",
+      "subCategory": "Mass Gainer",
+      "price": 5500.5,
+      "stock": 250,
+      "rating": 4,
+      "reviewsCount": 302,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Calories", "Muscle Gain"],
+      "shortDescription": "High-calorie mass gainer for extreme bulking.",
+      "highlights": [
+        "1250 calories per serving",
+        "50g protein",
+        "Added creatine",
+        "Carb blend for energy"
+      ],
+      "longDescription": {
+        "intro": "Mass Builder Pro is formulated for hard gainers who struggle to gain weight.",
+        "sections": [
+          {
+            "title": "Maximum Size",
+            "content": "High calorie formula supports rapid weight and muscle gain."
+          }
+        ],
+        "conclusion": "Fuel your growth."
+      },
+      "nutritionFacts": {
+        "servingSize": "300g",
+        "servingsPerContainer": 10,
+        "protein": "50g",
+        "carbs": "220g",
+        "fat": "12g",
+        "calories": 1250
+      },
+      "ingredients": ["Whey Concentrate", "Oat Flour", "Creatine Monohydrate"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": true,
+        "order": 1
+      }
+    },
+    {
+      "name": "Ultra Whey Isolate 90",
+      "brand": "IronMax",
+      "category": "Protein",
+      "subCategory": "Whey Isolate",
+      "price": 4500,
+      "stock": 150,
+      "rating": 3,
+      "reviewsCount": 414,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Protein", "Low Sugar", "Top Seller"],
+      "shortDescription": "Premium whey isolate delivering 27g protein per serving with ultra-low carbs.",
+      "highlights": [
+        "90% protein per serving",
+        "Supports muscle growth",
+        "Low fat & low sugar",
+        "Easy digestion",
+        "30 servings"
+      ],
+      "longDescription": {
+        "intro": "Ultra Whey Isolate 90 is designed for serious athletes looking for clean muscle gains without unnecessary calories.",
+        "sections": [
+          {
+            "title": "Muscle Recovery",
+            "content": "Provides fast-absorbing protein to repair and grow muscle tissue."
+          },
+          {
+            "title": "Lean Formula",
+            "content": "Contains minimal carbohydrates and fats, ideal for cutting phases."
+          }
+        ],
+        "conclusion": "Maximize your performance with every scoop."
+      },
+      "nutritionFacts": {
+        "servingSize": "30g",
+        "servingsPerContainer": 30,
+        "protein": "27g",
+        "carbs": "1g",
+        "fat": "0.5g",
+        "calories": 115
+      },
+      "ingredients": ["Whey Protein Isolate", "Natural Flavor", "Stevia"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Mass Gainer Extreme",
+      "brand": "BulkPro",
+      "category": "Supplements",
+      "subCategory": "Mass Gainer",
+      "price": 6000,
+      "stock": 80,
+      "rating": 5,
+      "reviewsCount": 211,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Calories"],
+      "shortDescription": "Perfect for weight gain and bulking.",
+      "highlights": [
+        "1000 calories per serving",
+        "High carbs",
+        "Muscle building"
+      ],
+      "longDescription": {
+        "intro": "Designed for hard gainers.",
+        "sections": [
+          {
+            "title": "Calories",
+            "content": "Provides massive calorie intake."
+          },
+          {
+            "title": "Strength",
+            "content": "Supports muscle mass increase."
+          }
+        ],
+        "conclusion": "Best for bulking phases."
+      },
+      "nutritionFacts": {
+        "servingSize": "150g",
+        "servingsPerContainer": 20,
+        "protein": "50g",
+        "carbs": "180g",
+        "fat": "5g",
+        "calories": 1000
+      },
+      "ingredients": ["Maltodextrin", "Whey protein", "Cocoa powder"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": true,
+        "order": 3
+      }
+    },
+    {
+      "name": "Mass Gainer 3000",
+      "brand": "Serious Mass",
+      "category": "Supplements",
+      "subCategory": "Mass Gainer",
+      "price": 7600,
+      "stock": 90,
+      "rating": 4.6,
+      "reviewsCount": 301,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Calories"],
+      "shortDescription": "Perfect for bulking.",
+      "highlights": ["1250 calories", "50g protein"],
+      "longDescription": {
+        "intro": "Designed for weight gain.",
+        "sections": [
+          {
+            "title": "Calories",
+            "content": "Massive calorie intake."
+          }
+        ],
+        "conclusion": "Best for bulking phase."
+      },
+      "nutritionFacts": {
+        "servingSize": "150g",
+        "servingsPerContainer": 20,
+        "protein": "50g",
+        "carbs": "200g",
+        "fat": "5g",
+        "calories": 1250
+      },
+      "ingredients": ["Maltodextrin", "Protein blend"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Creatine Monohydrate",
+      "brand": "MyProtein",
+      "category": "Supplements",
+      "subCategory": "Creatine",
+      "price": 2400,
+      "stock": 200,
+      "rating": 4.7,
+      "reviewsCount": 410,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Strength"],
+      "shortDescription": "Increase strength and performance.",
+      "highlights": ["5g creatine", "Pure formula"],
+      "longDescription": {
+        "intro": "Scientifically proven supplement.",
+        "sections": [
+          {
+            "title": "Power",
+            "content": "Boosts explosive strength."
+          }
+        ],
+        "conclusion": "Perfect for gym performance."
+      },
+      "nutritionFacts": {
+        "servingSize": "5g",
+        "servingsPerContainer": 60,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "calories": 0
+      },
+      "ingredients": ["Creatine monohydrate"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "BCAA Energy",
+      "brand": "Cellucor",
+      "category": "Supplements",
+      "subCategory": "BCAA",
+      "price": 2800,
+      "stock": 110,
+      "rating": 4.5,
+      "reviewsCount": 210,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Energy"],
+      "shortDescription": "Boost endurance and energy.",
+      "highlights": ["Zero sugar", "Electrolytes"],
+      "longDescription": {
+        "intro": "Supports hydration and energy.",
+        "sections": [
+          {
+            "title": "Endurance",
+            "content": "Train longer."
+          }
+        ],
+        "conclusion": "Stay energized during workouts."
+      },
+      "nutritionFacts": {
+        "servingSize": "10g",
+        "servingsPerContainer": 30,
+        "protein": "0g",
+        "carbs": "2g",
+        "fat": "0g",
+        "calories": 10
+      },
+      "ingredients": ["BCAA", "Caffeine"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Pre-Workout Explosion",
+      "brand": "C4",
+      "category": "Supplements",
+      "subCategory": "PreWorkout",
+      "price": 3900,
+      "stock": 130,
+      "rating": 4.6,
+      "reviewsCount": 280,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Popular"],
+      "shortDescription": "Energy boost before workouts.",
+      "highlights": ["Explosive energy", "Focus"],
+      "longDescription": {
+        "intro": "High-performance pre-workout.",
+        "sections": [
+          {
+            "title": "Focus",
+            "content": "Stay sharp."
+          }
+        ],
+        "conclusion": "Train harder."
+      },
+      "nutritionFacts": {
+        "servingSize": "12g",
+        "servingsPerContainer": 25,
+        "protein": "0g",
+        "carbs": "1g",
+        "fat": "0g",
+        "calories": 5
+      },
+      "ingredients": ["Caffeine", "Beta-alanine"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Multivitamin Complex",
+      "brand": "VitaMax",
+      "category": "Supplements",
+      "subCategory": "Vitamins",
+      "price": 1400.99,
+      "stock": 200,
+      "rating": 4.6,
+      "reviewsCount": 150,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Daily"],
+      "shortDescription": "Complete daily vitamins.",
+      "highlights": ["All vitamins", "Immune support"],
+      "longDescription": {
+        "intro": "Covers all essential vitamins.",
+        "sections": [
+          {
+            "title": "Health",
+            "content": "Boosts immunity."
+          }
+        ],
+        "conclusion": "Perfect daily supplement."
+      },
+      "nutritionFacts": {
+        "servingSize": "1 tablet",
+        "servingsPerContainer": 90,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "0g",
+        "calories": 0
+      },
+      "ingredients": ["Vitamin A", "Vitamin C"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Omega 3 Fish Oil",
+      "brand": "HealthPlus",
+      "category": "Supplements",
+      "subCategory": "Vitamins",
+      "price": 1500.5,
+      "stock": 180,
+      "rating": 4.7,
+      "reviewsCount": 320,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Healthy"],
+      "shortDescription": "Supports heart health.",
+      "highlights": ["EPA & DHA", "Daily support"],
+      "longDescription": {
+        "intro": "Essential fatty acids.",
+        "sections": [
+          {
+            "title": "Heart",
+            "content": "Supports cardiovascular health."
+          }
+        ],
+        "conclusion": "Great daily supplement."
+      },
+      "nutritionFacts": {
+        "servingSize": "2 capsules",
+        "servingsPerContainer": 60,
+        "protein": "0g",
+        "carbs": "0g",
+        "fat": "2g",
+        "calories": 20
+      },
+      "ingredients": ["Fish oil", "Gelatin"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Whey Protein Isolate",
+      "brand": "OptiFuel",
+      "category": "Supplements",
+      "subCategory": "Protein",
+      "price": 4900.5,
+      "stock": 120,
+      "rating": 4.7,
+      "reviewsCount": 320,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Best Seller", "High Protein"],
+      "shortDescription": "High-quality whey protein for muscle recovery.",
+      "highlights": ["25g protein per serving", "Low sugar", "Fast absorption"],
+      "longDescription": {
+        "intro": "This whey protein isolate is designed for athletes.",
+        "sections": [
+          {
+            "title": "Performance",
+            "content": "Supports muscle growth and recovery."
+          },
+          {
+            "title": "Quality",
+            "content": "Made with premium ingredients."
+          }
+        ],
+        "conclusion": "Perfect for daily protein intake."
+      },
+      "nutritionFacts": {
+        "servingSize": "30g",
+        "servingsPerContainer": 30,
+        "protein": "25g",
+        "carbs": "3g",
+        "fat": "1g",
+        "calories": 120
+      },
+      "ingredients": ["Whey protein isolate", "Natural flavors", "Stevia"],
+      "__v": 0,
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      }
+    },
+    {
+      "name": "Whey Protien",
+      "brand": "ALLNUTIRUTION",
+      "category": "Protein",
+      "subCategory": "Whey Protien",
+      "price": 5000,
+      "stock": 50,
+      "rating": 4.7,
+      "reviewsCount": 3,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Protien", "High Protien", "High Protien"],
+      "shortDescription": "ALLNUTRITION WHEY PROTEIN is bestseller WPC protein drink, developed for people with an intense lifestyle",
+      "highlights": [
+        "High Protien",
+        "High Protien",
+        "High Protien",
+        "High Protien"
+      ],
+      "longDescription": {
+        "intro": "ALLNUTRITION WHEY PROTEIN is bestseller WPC protein drink, developed for people with an intense lifestyle",
+        "sections": [
+          {
+            "title": "GAIN AND MAINTAIN MUSCLE MASS",
+            "content": "Protein contributes to the growth of muscle mass [1]. The amino acids it contains are essential for the synthesis of muscle proteins. When the body receives an adequate amount of this building block, it provides the raw materials needed for muscle growth."
+          },
+          {
+            "title": "HEALTHY BONES",
+            "content": "Protein intake helps maintain healthy bones [2]. Bones are made up of cells, proteins, minerals and other substances. Protein is essential for the formation of new cells, including those involved in building and maintaining bone structure."
+          },
+          {
+            "title": "DIET AND TRAINING SUPPORT",
+            "content": "Protein is the foundation of a properly functioning body. Its universal role makes it indispensable in almost all life processes, without which we could not function.  For the average adult, it is recommended to consume about 0.8 g of protein per kilogram of body weight. However, it is worth remembering that people who train intensively and seniors have an increased need for this macronutrient, which results from their regenerative and metabolic needs. A varied diet that provides all the necessary amino acids allows you to fully utilise the potential of protein, contributing to optimal health and performance."
+          }
+        ],
+        "conclusion": "WHEY PROTEIN - the most popular protein supplement for bigger muscles and healthy bones!\n\n"
+      },
+      "nutritionFacts": {
+        "servingSize": "2scopes",
+        "servingsPerContainer": 50,
+        "protein": "20g",
+        "carbs": "20g",
+        "fat": "5g",
+        "calories": 200
+      },
+      "ingredients": [
+        "High Protien",
+        "High Protien",
+        "High Protien",
+        "High Protien"
+      ],
+      "featured": {
+        "isFeatured": true,
+        "order": 4
+      },
+      "__v": 0
+    },
+    {
+      "name": "Isolate",
+      "brand": "Optimum Nutirution",
+      "category": "Fat Burners",
+      "subCategory": "Whey Protien",
+      "price": 3500,
+      "stock": 50,
+      "rating": 4.3,
+      "reviewsCount": 3,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["High Protien", "High calories"],
+      "shortDescription": "ALLNUTRITION WHEY PROTEIN is bestseller WPC protein drink, developed for people with an intense lifestyle",
+      "highlights": ["High Protien"],
+      "longDescription": {
+        "intro": " bestseller WPC protein drink, developed for people with an intense lifestyle",
+        "sections": [
+          {
+            "title": " bestseller WPC protein drink, developed for people with an intense lifestyle",
+            "content": " bestseller WPC protein drink, developed for people with an intense lifestyle"
+          }
+        ],
+        "conclusion": " bestseller WPC protein drink, developed for people with an intense lifestyle"
+      },
+      "nutritionFacts": {
+        "servingSize": "scope1",
+        "servingsPerContainer": 60,
+        "protein": "20g",
+        "carbs": "20g",
+        "fat": "10g",
+        "calories": 1000
+      },
+      "ingredients": ["High Protien"],
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      },
+      "__v": 0
+    },
+    {
+      "name": "HIGH5 Energy Gels with Electrolytes",
+      "brand": "HIGH5 STORE",
+      "category": "Hydration",
+      "subCategory": "performance",
+      "price": 2500,
+      "stock": 50,
+      "rating": 0,
+      "reviewsCount": 0,
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnone_cxae0e.jpg",
+          "public_id": "xtBurnone_cxae0e"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurntwo_g8pn3f.jpg",
+          "public_id": "xtBurntwo_g8pn3f"
+        },
+        {
+          "url": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+          "public_id": "xtBurnthree_lwj3om"
+        }
+      ],
+      "badges": ["Quick Release Sports", "Peak Performance", "Cycling"],
+      "shortDescription": "Energise Efficiently - Achieve peak performance with HIGH5 Energy Gel Electrolyte: Instant energy delivery with 23g of carbs and electrolyes to replenish minerals lost through sweat - Sustain intensity in sports like running, cycling or football",
+      "highlights": ["Peak Performance", "Boost for Running", "Endurance "],
+      "longDescription": {
+        "intro": "Elevate your performance with HIGH5 Energy Gel Electrolye, the ultimate energy source for athletes and active individuals. Crafted with natural fruit juice, this gel offers a deliciously invigorating taste and a smooth, light consistency ideal for on-the-go consumption. Each easy-to-open sachet delivers a potent 23g of carbohydrates, providing quick energy supply to sustain intensity in sports like running, cycling or football - with just 91 kcal per each running gel.",
+        "sections": [
+          {
+            "title": "Refershing&Performance",
+            "content": "Refreshing Taste & Smooth Texture - Savour the light consistency of HIGH5 Energy Gel Raspberry, made from natural fruit juice for an invigorating delicious taste: a delightful energy boost with every glucose gel sachet"
+          },
+          {
+            "title": "Portable Energey",
+            "content": "Portable Energy - Designed for active lifestyles, these energy gels offer hassle-free consumption with easy-open, carry-friendly packs: Perfect running accessories for quick, on-the-go energy during any high-intensity activity"
+          },
+          {
+            "title": "Clean Energy ",
+            "content": "Clean Energy for Mindful Athletes and Amateurs - Trust in the health-conscious formula of HIGH5 Electrolyte Gel: Natural fruit juice-based with added Sodium, Potassium, Magnesium, and Chloride - Free from artificial sweeteners, colourings or caffeine"
+          },
+          {
+            "title": "Perfect Sports Gift Choice",
+            "content": "With its formulation, HIGH5 Energy Gel stands out within marathon runner gifts, athletics gifts or cycling gifts: a thoughtful selection among running gifts, it complements any running equipment"
+          }
+        ],
+        "conclusion": "HIGH5 Energy Gel is the choice for a clean, convenient, and comprehensive energy boost that supports your well-being and enhances your performance whilst exercising.\n\n"
+      },
+      "nutritionFacts": {
+        "servingSize": "cup",
+        "servingsPerContainer": 25,
+        "protein": "20g",
+        "carbs": "23",
+        "fat": "10g",
+        "calories": 224
+      },
+      "ingredients": ["Natural Fruit Juice"],
+      "featured": {
+        "isFeatured": false,
+        "order": 0
+      },
+      "__v": 0
+    }
+  ],
+  "goals": [
+    {
+      "id": 1,
+      "name": "Muscle Gain",
+      "slug": "muscle-gain",
+      "price": 149.99,
+      "categoryIds": [1],
+      "description": "The Muscle Gain goal is designed for individuals looking to increase lean muscle mass while maintaining optimal recovery and performance. This pack focuses on high-quality protein sources and mass-building support supplements.",
+      "highlights": [
+        "Supports muscle growth and recovery",
+        "High protein intake support",
+        "Optimized for post-workout nutrition",
+        "Ideal for bulking phases"
+      ],
+      "productIds": [1, 2, 5, 8]
+    },
+    {
+      "id": 2,
+      "name": "Weight Loss",
+      "slug": "weight-loss",
+      "price": 119.99,
+      "categoryIds": [2],
+      "description": "The Weight Loss goal is carefully structured to help reduce body fat while preserving lean muscle mass. It focuses on clean protein sources, metabolism support, and appetite control.",
+      "highlights": [
+        "Low calorie, high protein support",
+        "Helps preserve lean muscle",
+        "Supports fat metabolism",
+        "Perfect for cutting phases"
+      ],
+      "productIds": [3, 6, 9, 12]
+    },
+    {
+      "id": 3,
+      "name": "Strength & Performance",
+      "slug": "strength-performance",
+      "price": 159.99,
+      "categoryIds": [3],
+      "description": "The Strength & Performance goal is tailored for athletes aiming to improve power output, endurance, and recovery. This pack includes performance-enhancing supplements and recovery boosters.",
+      "highlights": [
+        "Boosts workout intensity",
+        "Improves strength output",
+        "Enhances recovery speed",
+        "Supports endurance training"
+      ],
+      "productIds": [4, 7, 10, 13]
+    },
+    {
+      "id": 4,
+      "name": "Lean Maintenance",
+      "slug": "lean-maintenance",
+      "price": 99.99,
+      "categoryIds": [1, 2],
+      "description": "The Lean Maintenance goal is built for those who want to maintain their physique year-round. Balanced protein intake and nutrient support ensure muscle preservation without excess calories.",
+      "highlights": [
+        "Balanced protein intake",
+        "Supports muscle preservation",
+        "Ideal for lifestyle fitness",
+        "Clean ingredient profile"
+      ],
+      "productIds": [2, 6, 11, 14]
+    },
+    {
+      "id": 5,
+      "name": "Mass Builder Pro",
+      "slug": "mass-builder-pro",
+      "price": 179.99,
+      "categoryIds": [1],
+      "description": "Mass Builder Pro is an advanced bulking solution combining high-calorie mass gainers with premium whey protein isolates. Designed for hard gainers who struggle to consume enough calories daily.",
+      "highlights": [
+        "High-calorie mass support",
+        "Premium whey protein blend",
+        "Designed for hard gainers",
+        "Accelerates muscle growth phase"
+      ],
+      "productIds": [1, 5, 8, 15]
+    }
+  ],
+  "Goals": [
+    {
+      "title": "Endurance",
+      "slug": "endurance",
+      "shortDescription": "Train longer, push further, and sustain your energy during intense sessions.",
+      "longDescription": "Endurance training demands sustained energy, hydration, and recovery. Whether you're running, cycling, or doing long workouts, your body needs the right fuel to maintain performance and delay fatigue.",
+      "sections": [
+        {
+          "title": "Sustain Energy During Training",
+          "description": "Maintain steady energy levels throughout long sessions.",
+          "product": {
+            "productId": "69fb3db2f672fed87857ece5",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778072628/t0e5di87ffgcbf8ubzh9.webp",
+            "customTitle": "Intra-Workout Energy Formula",
+            "highlights": [
+              "Fast-absorbing carbohydrates",
+              "Electrolytes for hydration",
+              "Supports endurance performance"
+            ]
+          }
+        },
+        {
+          "title": "Hydration & Recovery",
+          "description": "Replenish fluids and minerals lost during training.",
+          "product": {
+            "productId": "69fb3253f672fed87857ea9e",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073639/Hammer_Nutrition_Sustained_Energy_2.0_ipyxyf.webp",
+            "customTitle": "HIGH5 Energy Gels with Electrolytes",
+            "highlights": [
+              "Essential minerals",
+              "Improves hydration",
+              "Supports recovery"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/endurance_ps7ptj.jpg"
+    },
+
+    {
+      "title": "Lean Physic",
+      "slug": "lean-physic",
+      "shortDescription": "Build a lean, defined body while minimizing fat gain.",
+      "longDescription": "Achieving a lean physique requires balancing protein intake, calorie control, and smart supplementation to preserve muscle while reducing fat.",
+      "sections": [
+        {
+          "title": "Lean Muscle Support",
+          "description": "High-quality protein to maintain muscle mass.",
+          "product": {
+            "productId": "69f91414b46980a08d878fa1",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1776047268/nutirution%20Products/apatjvmdjfljdkc9z3z8.webp",
+            "customTitle": "Whey Protein Isolate",
+            "highlights": [
+              "High protein, low fat",
+              "Fast absorption",
+              "Supports muscle recovery"
+            ]
+          }
+        },
+        {
+          "title": "Jacked Factory Burn-XT Clinically",
+          "description": "Boost metabolism and support fat loss.",
+          "product": {
+            "productId": "69fb36f7f672fed87857eb7a",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778071456/xtBurnthree_lwj3om.jpg",
+            "customTitle": "Thermogenic Fat Burner",
+            "highlights": [
+              "Supports metabolism",
+              "Helps fat oxidation",
+              "Energy boosting formula"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/leanphysique_bazegi.webp"
+    },
+    {
+      "title": "High Performance",
+      "slug": "high-performance",
+      "shortDescription": "Maximize strength, focus, and athletic performance.",
+      "longDescription": "High-level performance requires optimal nutrition, focus, and recovery. Push your limits with supplements designed for strength, power, and mental clarity.",
+      "sections": [
+        {
+          "title": "Pre-Workout Focus",
+          "description": "Enhance focus and energy before training.",
+          "product": {
+            "productId": "69dc54a579946d9e8411516c",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073818/nitraflex-advanced_wsr8sg.webp",
+            "customTitle": "NITRAFLEX ADVANCED",
+            "highlights": [
+              "Caffeine for energy",
+              "Focus-enhancing ingredients",
+              "Boosts training intensity"
+            ]
+          }
+        },
+        {
+          "title": "Strength & Power",
+          "description": "Increase strength and explosive power.",
+          "product": {
+            "productId": "69dc54a579946d9e84115160",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073229/micronisedCreatineone_ifkhnm.webp",
+            "customTitle": "Micronised Creatine",
+            "highlights": [
+              "Improves power output",
+              "Supports strength gains",
+              "Enhances performance"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/high_performance_nvuhiq.jpg"
+    },
+    {
+      "title": "Active Lifestyle",
+      "slug": "active-lifestyle",
+      "shortDescription": "Stay energized, healthy, and ready for daily activity.",
+      "longDescription": "An active lifestyle requires consistent energy, proper nutrition, and recovery support to keep you feeling your best every day.",
+      "sections": [
+        {
+          "title": "Daily Nutrition Support",
+          "description": "Fill nutritional gaps in your diet.",
+          "product": {
+            "productId": "69dc54a579946d9e84115170",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1776047268/nutirution%20Products/vprsrfio1afvsjy8ntjg.webp",
+            "customTitle": "Omega 3 Fish Oil",
+            "highlights": [
+              "Essential vitamins & minerals",
+              "Supports overall health",
+              "Boosts daily energy"
+            ]
+          }
+        },
+        {
+          "title": "Light Protein Support",
+          "description": "Maintain muscle and energy throughout the day.",
+          "product": {
+            "productId": "69dc54a579946d9e8411514a",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1776047269/nutirution%20Products/nb6jr8q5e2wg20ncizqp.webp",
+            "customTitle": "Everyday Protein Shake",
+            "highlights": [
+              "Balanced nutrition",
+              "Easy to digest",
+              "Supports recovery"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/active_lifestyle_pepxvf.jpg"
+    },
+    {
+      "title": "Build Muscle",
+      "slug": "build-muscle",
+      "shortDescription": "Gain size, strength, and muscle mass effectively.",
+      "longDescription": "Building muscle requires a calorie surplus, proper training, and consistent supplementation to support recovery and growth.",
+      "sections": [
+        {
+          "title": "Mass & Calorie Intake",
+          "description": "Increase calorie intake to support muscle growth.",
+          "product": {
+            "productId": "69f371ed0fede00b79a9416a",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1776047268/nutirution%20Products/f3aoqntllwlnz0ewrwc4.webp",
+            "customTitle": "Whey Protien",
+            "highlights": [
+              "High calories per serving",
+              "Rich in carbs & protein",
+              "Supports weight gain"
+            ]
+          }
+        },
+        {
+          "title": "Strength & Recovery",
+          "description": "Train harder and recover faster.",
+          "product": {
+            "productId": "69dc54a579946d9e84115160",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073229/micronisedCreatineone_ifkhnm.webp",
+            "customTitle": "Creatine Monohydrate",
+            "highlights": [
+              "Boosts strength",
+              "Improves recovery",
+              "Enhances performance"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/build_muscle_kywcdp.webp"
+    },
+    {
+      "title": "Weight Management",
+      "slug": "weight-management",
+      "shortDescription": "Control your weight with smart nutrition and support.",
+      "longDescription": "Managing weight is about balancing calorie intake, staying active, and supporting your metabolism with the right supplements.",
+      "sections": [
+        {
+          "title": "Appetite Control",
+          "description": "Help manage hunger and cravings.",
+          "product": {
+            "productId": "69dc54a579946d9e84115164",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073552/aptiteControl2_z4poan.webp",
+            "customTitle": "Appetite Control Formula",
+            "highlights": [
+              "Reduces cravings",
+              "Supports diet control",
+              "Helps calorie balance"
+            ]
+          }
+        },
+        {
+          "title": "Metabolism Support",
+          "description": "Boost metabolism and energy levels.",
+          "product": {
+            "productId": "69dc54a579946d9e84115168",
+            "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1778073552/aptiteControl2_z4poan.webp",
+            "customTitle": "Metabolism Booster",
+            "highlights": [
+              "Supports fat burning",
+              "Increases energy",
+              "Helps weight control"
+            ]
+          }
+        }
+      ],
+      "image": "https://res.cloudinary.com/dtjszaypd/image/upload/v1777994842/weight_management_qyg80d.jpg"
+    }
+  ]
+}

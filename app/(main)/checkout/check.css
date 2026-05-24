@@ -1,0 +1,50 @@
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 10, 10, 0.92);
+  padding: 10px;
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+select::picker-icon {
+  color: #34d399;
+  transition: 0.4s rotate;
+}
+
+option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+option:nth-of-type(odd) {
+  background: rgba(14, 14, 14, 0.95);
+}
+
+option:hover,
+option:focus {
+  background: rgba(52, 211, 153, 0.22);
+  color: #ffffff;
+}
+::picker(select) {
+  top: calc(anchor(bottom) + 1px);
+  left: anchor(0%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
