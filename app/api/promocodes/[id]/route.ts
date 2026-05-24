@@ -50,9 +50,9 @@ export const GET = async (
       },
     });
   }
-  await ConnectDB(process.env.MONGO_URI!);
 
   try {
+    await ConnectDB(process.env.MONGO_URI!);
     const promo = await Promo.find({ promoCode });
 
     if (!promo) {
