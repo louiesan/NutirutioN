@@ -73,10 +73,9 @@ export default function CheckoutContextProvider({
   const handleGetPromoCode = async (promo: string) => {
     try {
       setLoading(true);
-      const res = await fetch(
-        apiUrl(`/api/promocodes/${promo.toUpperCase()}`),
-        { method: "GET" },
-      );
+      const res = await fetch(`/api/promocodes/${promo.toUpperCase()}`, {
+        method: "GET",
+      });
       const data = await res.json();
       console.log(data, "PROMO DATA");
       const promoOb = data[0];
