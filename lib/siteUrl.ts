@@ -1,5 +1,5 @@
 const resolvedBaseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
+  process.env.NEXT_PUBLIC_API_URL ||
   process.env.NEXTAUTH_URL ||
   process.env.DEPLOY_PRIME_URL ||
   process.env.URL ||
@@ -7,7 +7,19 @@ const resolvedBaseUrl =
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000");
 
-export const baseUrl = resolvedBaseUrl.replace(/\/$/, "");
+export function getApiBaseUrl() {
+  if (typeof window !== "undefined") {
+    return (process.env.NEXT_PUBLIC_API_URL || window.location.origin).replace(
+      /\/$/,
+      "",
+    );
+  }
 
-export const apiUrl = (path: string) =>
-  `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
+  return resolvedBaseUrl.replace(/\/$/, "");
+}
+
+export function apiUrl(path: string) {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  return `${getApiBaseUrl()}${normalizedPath}`;
+}

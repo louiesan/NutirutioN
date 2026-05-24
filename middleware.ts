@@ -1,12 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
-import NextAuth from "next-auth";
-import { authConfig } from "./auth.config";
+import { NextResponse } from "next/server";
+import { auth } from "./auth";
+import type { NextAuthRequest } from "next-auth";
 import { LoginRoute, ProtectedRoute } from "./lib/routeList";
 
-const { auth } = NextAuth(authConfig);
-
-export async function middleware(req: NextRequest) {
-  const session = await auth();
+export default auth((req: NextAuthRequest) => {
+  const session = req.auth;
   const { nextUrl } = req;
 
   const isProtected = ProtectedRoute.find((route) =>
@@ -21,7 +19,7 @@ export async function middleware(req: NextRequest) {
   if (isAuthenticated && isLogin) {
     return NextResponse.redirect(new URL("/profile", nextUrl));
   }
-}
+});
 
 export const config = {
   matcher: [
