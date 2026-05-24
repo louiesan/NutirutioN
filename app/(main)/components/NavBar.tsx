@@ -134,6 +134,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
           <ul className="w-full h-fit flex flex-col items-start gap-1.5 mb-2.5">
             <li>
               <Link
+                onClick={() => setMobileMenuOpen(false)}
                 className={`${pathname === "/" ? "text-white" : "text-white/40"} w-full h-fit flex flex-row flex-nowrap items-center gap-1 cursor-pointer text-2xl font-medium border border-transparent rounded-xl px-2 py-2 hover:text-white duration-300 ease-in-out transition-all`}
                 href={"/"}
               >
@@ -143,6 +144,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
             </li>
             <li>
               <Link
+                onClick={() => setMobileMenuOpen(false)}
                 className={`${pathname === "/markets" ? "text-white" : "text-white/40"} w-full h-fit flex flex-row flex-nowrap items-center gap-1 cursor-pointer text-2xl font-medium border border-transparent rounded-xl px-2 py-2 hover:text-white duration-300 ease-in-out transition-all`}
                 href={"/markets"}
               >
@@ -152,6 +154,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
             </li>
             <li>
               <Link
+                onClick={() => setMobileMenuOpen(false)}
                 className={`${pathname === "/about" ? "text-white" : "text-white/40"} w-full h-fit flex flex-row flex-nowrap items-center gap-1 cursor-pointer text-2xl font-medium border border-transparent rounded-xl px-2 py-2 hover:text-white duration-300 ease-in-out transition-all`}
                 href={"/about"}
               >
@@ -161,6 +164,7 @@ export default function NavBar({ children }: { children: React.ReactNode }) {
             </li>
             <li>
               <Link
+                onClick={() => setMobileMenuOpen(false)}
                 className={`${pathname === "/goals" ? "text-white" : "text-white/40"} w-full h-fit flex flex-row flex-nowrap items-center gap-1 cursor-pointer text-2xl font-medium border border-transparent rounded-xl px-2 py-2 hover:text-white duration-300 ease-in-out transition-all`}
                 href={"/goals"}
               >

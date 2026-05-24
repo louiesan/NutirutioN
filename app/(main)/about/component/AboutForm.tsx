@@ -86,7 +86,7 @@ export const AboutForm = () => {
         id="name"
         name="name"
         type="text"
-        placeholder="Hdaydi Ostora"
+        placeholder="John Doe"
         value={formData.name}
         onChange={handleChange}
         required
@@ -102,7 +102,7 @@ export const AboutForm = () => {
         id="email"
         name="email"
         type="email"
-        placeholder="shesthebest@beloved.com"
+        placeholder="john.doe@example.com"
         value={formData.email}
         onChange={handleChange}
         required

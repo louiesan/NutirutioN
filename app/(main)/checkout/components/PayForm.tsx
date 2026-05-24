@@ -24,7 +24,7 @@ export default function PayForm() {
     "w-full h-full px-2.5 py-3 flex flex-col items-center justify-center gap-1.5 rounded-2xl border cursor-pointer transition-all duration-300 ease-in";
 
   return (
-    <div className="w-full h-fit flex flex-col gap-5 sticky top-20">
+    <div className="w-full h-fit flex flex-col gap-5 md:sticky md:top-20">
       <form className={cardClass}>
         <h4 className="text-white font-semibold text-2xl mb-1.5">
           Customer details

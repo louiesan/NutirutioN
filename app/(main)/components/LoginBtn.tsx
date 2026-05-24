@@ -34,7 +34,7 @@ export const LoginBtn = async () => {
           </Link>
         )}
       </li>
-      <li className="inline md:hidden">
+      <li className="w-full h-fit inline md:hidden">
         {isLogedIn ? (
           <Link
             className={` w-full h-fit flex flex-row flex-nowrap items-center gap-1 cursor-pointer text-2xl font-medium border border-transparent rounded-xl px-2 py-2 hover:text-white duration-300 ease-in-out transition-all text-white/50`}
@@ -53,8 +53,7 @@ export const LoginBtn = async () => {
               </>
             ) : (
               <>
-                ]
-                <div className="text-xl font-bold uppercase rounded-full px-2.5 py-1.5 bg-green-400 border border-white">
+                <div className="text-xl font-bold uppercase rounded-full w-8 h-8 flex items-center justify-center bg-green-400 border border-white">
                   {session.user?.name?.slice(0, 1)}
                 </div>
                 <span>Profile</span>

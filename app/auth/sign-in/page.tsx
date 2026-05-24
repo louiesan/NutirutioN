@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Eye, EyeClosed, Loader2 } from "lucide-react";
 import { CredentialsLogin, GandGlogin } from "@/app/actions/action";
 import { redirect, useRouter } from "next/navigation";
+import { toast } from "react-hot-toast";
 
 const montserrat = Montserrat({
   weight: ["400", "600", "700"],
@@ -37,9 +38,10 @@ export default function SignIn() {
       setLoading(true);
       await CredentialsLogin({ email, password });
       setError("");
-      router.replace("/profile");
+      router.push("/profile");
     } catch (err) {
       setError("Invalid Credentials!");
+      toast.error("Invalid email or password. Please try again.");
       console.log(err, "from sign-in");
       throw err;
     } finally {

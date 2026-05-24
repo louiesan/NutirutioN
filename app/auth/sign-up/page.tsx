@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Eye, EyeClosed, Loader2 } from "lucide-react";
-
+import toast from "react-hot-toast";
 import { GandGlogin } from "@/app/actions/action";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -69,8 +69,9 @@ export default function SignUp() {
       const data = await res.json();
       if (res.ok) {
         router.push("/auth/sign-in");
+        toast.success("Account created successfully. Please sign in.");
       } else {
-        console.log(data);
+        toast.error(data.message);
       }
     } catch (err: any) {
       setError(err.message);
