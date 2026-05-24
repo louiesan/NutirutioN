@@ -19,6 +19,9 @@ export default async function Orders() {
   }
 
   const id = session?.user?.id;
+  if (!id) {
+    redirect("/auth/sign-in");
+  }
   const res = await fetch(apiUrl(`/api/orders/${id}`), {
     headers: await headers(),
   });

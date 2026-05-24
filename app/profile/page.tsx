@@ -18,6 +18,9 @@ export default async function page() {
   }
 
   const id = session?.user?.id;
+  if (!id) {
+    redirect("/auth/sign-in");
+  }
   console.log(session);
 
   const res = await fetch(apiUrl(`/api/users/${id}`), {
