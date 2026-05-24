@@ -1,6 +1,7 @@
 import Plans from "../components/Plans";
 import OnScroll from "../components/OnScroll";
 import { Rubik } from "next/font/google";
+import { apiUrl } from "@/lib/siteUrl";
 
 type GoalPlan = {
   title: string;
@@ -27,7 +28,7 @@ const rubik = Rubik({
 });
 
 export default async function GoalsPage() {
-  const res = await fetch("http://localhost:3000/api/goals");
+  const res = await fetch(apiUrl("/api/goals"));
   const data = await res.json();
   const goals = data as GoalPlan[];
 

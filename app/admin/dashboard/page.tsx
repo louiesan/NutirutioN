@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { BarChart3, Package, ShoppingCart, Users2 } from "lucide-react";
 import DashboardCharts from "./components/DashboardCharts";
+import { apiUrl } from "@/lib/siteUrl";
 
 type DashboardUser = {
   _id: string;
@@ -59,11 +60,11 @@ async function fetchDashboardData<T>(url: string): Promise<T> {
 
 export default async function Page() {
   const [usersData, productsData, ordersData] = await Promise.all([
-    fetchDashboardData<DashboardUser[]>("http://localhost:3000/api/users"),
+    fetchDashboardData<DashboardUser[]>(apiUrl("/api/users")),
     fetchDashboardData<{ products: DashboardProduct[] }>(
-      "http://localhost:3000/api/products",
+      apiUrl("/api/products"),
     ),
-    fetchDashboardData<DashboardOrder[]>("http://localhost:3000/api/orders"),
+    fetchDashboardData<DashboardOrder[]>(apiUrl("/api/orders")),
   ]);
 
   const users = usersData || [];

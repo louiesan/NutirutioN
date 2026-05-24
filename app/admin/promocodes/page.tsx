@@ -2,9 +2,10 @@ import { Suspense } from "react";
 import { CodeMang } from "./components/CodeMang";
 import { PromoWrapper } from "./components/PromoWrapper";
 import { CodeLoading } from "./components/CodeLoading";
+import { apiUrl } from "@/lib/siteUrl";
 
 export default async function page() {
-  const res = await fetch("http://localhost:3000/api/promocodes");
+  const res = await fetch(apiUrl("/api/promocodes"));
 
   const data = await res.json();
 

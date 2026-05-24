@@ -2,6 +2,7 @@ import { Loader2, Star, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
+import { apiUrl } from "@/lib/siteUrl";
 
 export const ReviewForm = ({
   productId,
@@ -37,7 +38,7 @@ export const ReviewForm = ({
     }
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/reviews", {
+      const res = await fetch(apiUrl("/api/reviews"), {
         method: "POST",
         body: JSON.stringify(review),
       });

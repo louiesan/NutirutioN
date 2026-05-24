@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { HeartPlusIcon, Pen } from "lucide-react";
 import { Poppins } from "next/font/google";
 import { redirect } from "next/navigation";
+import { apiUrl } from "@/lib/siteUrl";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,7 +20,7 @@ export default async function page() {
   const id = session?.user?.id;
   console.log(session);
 
-  const res = await fetch(`http://localhost:3000/api/users/${id}`, {
+  const res = await fetch(apiUrl(`/api/users/${id}`), {
     headers: await headers(),
   });
   console.log(res);

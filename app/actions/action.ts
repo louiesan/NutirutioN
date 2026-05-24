@@ -4,6 +4,7 @@ import { cart, item } from "@/apptypes/types";
 import { auth, signIn, signOut } from "@/auth";
 import { redirect } from "next/navigation";
 import toast from "react-hot-toast";
+import { apiUrl } from "@/lib/siteUrl";
 
 export async function GandGlogin(action: string) {
   try {
@@ -48,7 +49,7 @@ export async function getAuthSession() {
 }
 
 export async function getCodeForBe(promo: string) {
-  const res = await fetch(`http://localhost:3000/api/promocodes/${promo}`);
+  const res = await fetch(apiUrl(`/api/promocodes/${promo}`));
   const data = await res.json();
   return data[0];
 }
@@ -59,7 +60,7 @@ export async function deleteUser() {
     toast.error("You must be logged in to delete your account");
     throw new Error("User not authenticated");
   }
-  await fetch(`http://localhost:3000/api/users/${session?.user?.id}`, {
+  await fetch(apiUrl(`/api/users/${session?.user?.id}`), {
     method: "DELETE",
   });
   await signOut({ redirectTo: "/" });

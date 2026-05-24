@@ -6,6 +6,7 @@ import Order from "@/public/orders.gif";
 import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
+import { apiUrl } from "@/lib/siteUrl";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
@@ -18,7 +19,7 @@ export default async function Orders() {
   }
 
   const id = session?.user?.id;
-  const res = await fetch(`http://localhost:3000/api/orders/${id}`, {
+  const res = await fetch(apiUrl(`/api/orders/${id}`), {
     headers: await headers(),
   });
   const data = await res.json();

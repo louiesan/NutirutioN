@@ -1,15 +1,16 @@
 import { headers } from "next/headers";
 import GoalsManager from "./components/GoalsManager";
+import { apiUrl } from "@/lib/siteUrl";
 
 export default async function GoalsAdminPage() {
   const requestHeaders = await headers();
 
   const [goalsResponse, productsResponse] = await Promise.all([
-    fetch("http://localhost:3000/api/goals", {
+    fetch(apiUrl("/api/goals"), {
       cache: "no-store",
       headers: requestHeaders,
     }),
-    fetch("http://localhost:3000/api/products", {
+    fetch(apiUrl("/api/products"), {
       cache: "no-store",
       headers: requestHeaders,
     }),

@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import OnScroll from "../../components/OnScroll";
+import { apiUrl } from "@/lib/siteUrl";
 
 type GoalSection = {
   title: string;
@@ -44,7 +45,7 @@ export default async function GoalSlugPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const res = await fetch(`http://localhost:3000/api/goals/${slug}`);
+  const res = await fetch(apiUrl(`/api/goals/${slug}`));
   const data = await res.json();
   const goal = data[0] as GoalPlan;
 

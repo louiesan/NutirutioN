@@ -9,6 +9,7 @@ import Cards from "./markets/components/Cards";
 import { auth } from "@/auth";
 import type { product } from "@/apptypes/types";
 import Link from "next/link";
+import { apiUrl } from "@/lib/siteUrl";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -18,7 +19,7 @@ const montserrat = Montserrat({
 
 export default async function Home() {
   const session = await auth();
-  const res = await fetch("http://localhost:3000/api/products?isFeatured=true");
+  const res = await fetch(apiUrl("/api/products?isFeatured=true"));
 
   const data = await res.json();
 

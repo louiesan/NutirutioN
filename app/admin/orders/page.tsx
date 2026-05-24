@@ -1,9 +1,10 @@
 import { headers } from "next/headers";
 import { Search } from "../users/components/Search";
 import { OrdersWrapper } from "./components/OrdersWrapper";
+import { apiUrl } from "@/lib/siteUrl";
 
 export default async function Orders() {
-  const res = await fetch("http://localhost:3000/api/orders", {
+  const res = await fetch(apiUrl("/api/orders"), {
     headers: await headers(),
   });
   const orders = await res.json();

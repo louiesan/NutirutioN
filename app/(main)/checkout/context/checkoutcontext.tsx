@@ -14,6 +14,7 @@ import AlgeriaWilaya from "@/data/Wilaya_Of_Algeria.json";
 import AlgeriaCommunes from "@/data/Commune_Of_Algeria.json";
 import { set } from "mongoose";
 import { redirect } from "next/navigation";
+import { apiUrl } from "@/lib/siteUrl";
 
 type checkoutContextType = {
   cart: cart[];
@@ -72,9 +73,7 @@ export default function CheckoutContextProvider({
   const handleGetPromoCode = async (promo: string) => {
     try {
       setLoading(true);
-      const res = await fetch(
-        `http://localhost:3000/api/promocodes/${promo.toUpperCase()}`,
-      );
+      const res = await fetch(apiUrl(`/api/promocodes/${promo.toUpperCase()}`));
       const data = await res.json();
       console.log(data, "PROMO DATA");
       const promoOb = data[0];
@@ -123,7 +122,7 @@ export default function CheckoutContextProvider({
     setIsFieldFilled(false);
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/orders", {
+      const res = await fetch(apiUrl("/api/orders"), {
         method: "POST",
         body: JSON.stringify(order),
       });

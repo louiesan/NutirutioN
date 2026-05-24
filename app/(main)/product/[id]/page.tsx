@@ -9,6 +9,7 @@ import { ReviewsMang } from "../component/ReviewsMang";
 import { ImageSlider } from "./components/ImageSlider";
 import { reviewsSchemaInterface } from "@/lib/models/Reviews";
 import Cards from "../../markets/components/Cards";
+import { apiUrl } from "@/lib/siteUrl";
 
 async function getProductDetail<T>(url: string): Promise<T> {
   try {
@@ -49,20 +50,18 @@ export default async function productPage({
   const session = await auth();
 
   const [product, reviews, similarProduct] = await Promise.all([
-    getProductDetail<ProductById>(`http://localhost:3000/api/products/${id}`),
+    getProductDetail<ProductById>(apiUrl(`/api/products/${id}`)),
     getProductReview<reviewsSchemaInterface[]>(
-      `http://localhost:3000/api/reviews?productId=${id}`,
+      apiUrl(`/api/reviews?productId=${id}`),
     ),
-    getSimilarProduct<product[]>(
-      `http://localhost:3000/api/products?category=Protein`,
-    ),
+    getSimilarProduct<product[]>(apiUrl(`/api/products?category=Protein`)),
   ]);
 
   console.log(similarProduct);
 
-  // const res = await fetch(`http://localhost:3000/api/products/${id}`);
+  // const res = await fetch(apiUrl(`/api/products/${id}`));
   // const data = await res.json();
-  // const revs = await fetch(`http://localhost:3000/api/reviews?productId=${id}`);
+  // const revs = await fetch(apiUrl(`/api/reviews?productId=${id}`));
   // const revData = await revs.json();
   // const reviews = revData.reviews;
   // const product: ProductById = data[0];

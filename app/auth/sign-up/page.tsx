@@ -9,6 +9,7 @@ import { Eye, EyeClosed, Loader2 } from "lucide-react";
 import { GandGlogin } from "@/app/actions/action";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { apiUrl } from "@/lib/siteUrl";
 const montserrat = Montserrat({
   weight: ["400", "600", "700"],
   subsets: ["latin"],
@@ -57,7 +58,7 @@ export default function SignUp() {
     event.preventDefault();
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/auth/register", {
+      const res = await fetch(apiUrl("/api/auth/register"), {
         method: "POST",
         body: JSON.stringify({
           name: name,

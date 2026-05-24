@@ -1,9 +1,10 @@
 import { Search } from "./components/Search";
 import { UserDisplay } from "./components/UserDisplay";
 import { UserWrapper } from "./components/UserWrapper";
+import { apiUrl } from "@/lib/siteUrl";
 
 export default async function page() {
-  const res = await fetch("http://localhost:3000/api/users");
+  const res = await fetch(apiUrl("/api/users"));
   const data = await res.json();
 
   const users = data;

@@ -4,6 +4,7 @@ import { createContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { LongDescription, ProductById, promocode } from "@/apptypes/types";
 import toast from "react-hot-toast";
+import { apiUrl } from "@/lib/siteUrl";
 
 type ProductDraft = {
   images: { url: string; public_id: string }[];
@@ -68,7 +69,7 @@ export default function AdminContextProvide({
   async function deleteUser(id: string) {
     try {
       setDelLoading(true);
-      const res = await fetch(`http://localhost:3000/api/users/${id}`, {
+      const res = await fetch(apiUrl(`/api/users/${id}`), {
         method: "DELETE",
       });
       const data = await res.json();
@@ -92,7 +93,7 @@ export default function AdminContextProvide({
   //  MAKE THIS IN SHAA ALLAH!
   async function createPromocode(promoCode: promocode) {
     try {
-      const res = await fetch("http://localhost:3000/api/promocodes", {
+      const res = await fetch(apiUrl("/api/promocodes"), {
         method: "POST",
         body: JSON.stringify(promoCode),
       });
@@ -117,7 +118,7 @@ export default function AdminContextProvide({
   async function deletePromocode(id: string) {
     try {
       setDelLoading(true);
-      const res = await fetch(`http://localhost:3000/api/promocodes/${id}`, {
+      const res = await fetch(apiUrl(`/api/promocodes/${id}`), {
         method: "DELETE",
       });
       const data = await res.json();
@@ -143,7 +144,7 @@ export default function AdminContextProvide({
     try {
       setOrderLoading(true);
 
-      const res = await fetch(`http://localhost:3000/api/orders/${id}`, {
+      const res = await fetch(apiUrl(`/api/orders/${id}`), {
         method: "PATCH",
         body: JSON.stringify({ status, item }),
       });
@@ -172,7 +173,7 @@ export default function AdminContextProvide({
   async function DeleteOrder(id: string) {
     try {
       setOrderLoading(true);
-      const res = await fetch(`http://localhost:3000/api/orders/${id}`, {
+      const res = await fetch(apiUrl(`/api/orders/${id}`), {
         method: "DELETE",
       });
       const data = await res.json();
@@ -200,7 +201,7 @@ export default function AdminContextProvide({
 
   async function createProduct() {
     try {
-      const res = await fetch("http://localhost:3000/api/products", {
+      const res = await fetch(apiUrl("/api/products"), {
         method: "POST",
         body: JSON.stringify(product),
       });
@@ -223,7 +224,7 @@ export default function AdminContextProvide({
   async function deleteProduct(id: string) {
     try {
       setDelLoading(true);
-      const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+      const res = await fetch(apiUrl(`/api/products/${id}`), {
         method: "DELETE",
       });
       const data = await res.json();
@@ -250,13 +251,10 @@ export default function AdminContextProvide({
     console.log(productData);
 
     try {
-      const res = await fetch(
-        `http://localhost:3000/api/products/${productData._id}`,
-        {
-          method: "PUT",
-          body: JSON.stringify(productData),
-        },
-      );
+      const res = await fetch(apiUrl(`/api/products/${productData._id}`), {
+        method: "PUT",
+        body: JSON.stringify(productData),
+      });
       const data = await res.json();
       if (res.ok) {
         toast.success("Product Updated!", {

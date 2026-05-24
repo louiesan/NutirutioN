@@ -5,13 +5,14 @@ import GridCards from "./components/GridCards";
 import Filtering from "./components/Filter";
 import { auth } from "@/auth";
 import { SmallScreenFilter } from "./components/SmallScreenFilter";
+import { apiUrl } from "@/lib/siteUrl";
 export default async function Markets({
   searchParams,
 }: {
   searchParams: Promise<searchparam>;
 }) {
   const session = await auth();
-  const res = await fetch("http://localhost:3000/api/products", {
+  const res = await fetch(apiUrl("/api/products"), {
     method: "GET",
   });
 
