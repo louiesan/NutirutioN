@@ -5,8 +5,8 @@ import { LoginRoute, ProtectedRoute } from "./lib/routeList";
 
 const { auth } = NextAuth(authConfig);
 
-export async function middleware(req: NextRequest) {
-  const session = await auth();
+export default auth((req) => {
+  const session = req.auth;
   const { nextUrl } = req;
 
   const isProtected = ProtectedRoute.find((route) =>
@@ -21,7 +21,7 @@ export async function middleware(req: NextRequest) {
   if (isAuthenticated && isLogin) {
     return NextResponse.redirect(new URL("/profile", nextUrl));
   }
-}
+});
 
 export const config = {
   matcher: [
