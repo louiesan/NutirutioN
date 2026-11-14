@@ -1,7 +1,6 @@
 import { auth } from "@/auth";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { HeartPlusIcon, Pen } from "lucide-react";
 import { Poppins } from "next/font/google";
 import { redirect } from "next/navigation";
 import { apiUrl } from "@/lib/siteUrl";
@@ -13,6 +12,8 @@ const poppins = Poppins({
 
 export default async function page() {
   const session = await auth();
+  const incomingHeaders = await headers();
+  const mutableHeaders = new Headers(incomingHeaders);
   if (session?.user?.role === "admin") {
     redirect("/admin/dashboard");
   }
@@ -21,16 +22,13 @@ export default async function page() {
   if (!id) {
     redirect("/auth/sign-in");
   }
-  console.log(session);
 
   const res = await fetch(apiUrl(`/api/users/${id}`), {
-    headers: await headers(),
+    headers: mutableHeaders,
   });
-  console.log(res);
 
   const data = await res.json();
   const userDetails = data[0];
-  console.log(userDetails);
 
   return (
     <main
