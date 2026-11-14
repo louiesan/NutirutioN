@@ -6,11 +6,9 @@ export const GET = async (
   { params }: { params: Promise<{ id: string }> },
 ) => {
   const { id } = await params;
-  console.log(id);
   await ConnectDB(process.env.MONGO_URI!);
 
   const user = await User.find({ _id: id }).select("-password");
-  console.log(user);
   if (!user) {
     throw new Error("User not Found!");
   }

@@ -29,7 +29,7 @@ export async function CredentialsLogin({
       redirect: false,
     });
   } catch (err: any) {
-    console.log(err);
+    console.error("Error during credentials login:", err);
     throw err;
   }
 }

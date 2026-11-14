@@ -16,7 +16,6 @@ export default function Cards({ product }: { product: product }) {
     quantity: 1,
   };
 
-  console.log(product, "from cards");
 
   const dispatch = useAppDispatch();
 

@@ -11,7 +11,6 @@ export default async function EditProduct({
   const res = await fetch(apiUrl(`/api/products/${id}`));
   const data = await res.json();
   const product = data[0];
-  console.log(product);
 
   return (
     <main className="w-full h-fit flex flex-col">

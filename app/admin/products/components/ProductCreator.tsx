@@ -216,7 +216,6 @@ export const ProductCreator = ({ onCloseAction }: ProductCreatorProps) => {
       setLoading(false);
     }
   };
-  console.log(product);
 
   return (
     <main className="fixed inset-0 z-120 flex items-center justify-center bg-slate-950/75 p-3 backdrop-blur-sm">

@@ -10,7 +10,6 @@ export default async function page() {
   const data = await res.json();
 
   const promocodes = data;
-  console.log(promocodes);
 
   return (
     <main className="w-full h-fit relative">

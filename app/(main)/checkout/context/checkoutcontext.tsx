@@ -67,8 +67,6 @@ export default function CheckoutContextProvider({
   const [isCode, setIsCode] = useState<string>("");
   const [shipping, setShipping] = useState<Number | null>(null);
   const { data, status } = useSession();
-  console.log(order);
-  console.log(promoDis, "PROMODIS");
 
   const handleGetPromoCode = async (promo: string) => {
     try {
@@ -77,7 +75,6 @@ export default function CheckoutContextProvider({
         method: "GET",
       });
       const data = await res.json();
-      console.log(data, "PROMO DATA");
       const promoOb = data[0];
       if (promoOb && Object.keys(promoOb).length > 0) {
         const currentDate = new Date().getTime();
@@ -129,7 +126,6 @@ export default function CheckoutContextProvider({
         body: JSON.stringify(order),
       });
       const data = await res.json();
-      console.log(data);
 
       if (res.ok) {
         window.localStorage.clear();

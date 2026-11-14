@@ -30,7 +30,6 @@ export default function SignIn() {
   const style = {
     opacity: !loading ? "100%" : "40%",
   };
-  console.log({ password, email });
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -42,7 +41,7 @@ export default function SignIn() {
     } catch (err) {
       setError("Invalid Credentials!");
       toast.error("Invalid email or password. Please try again.");
-      console.log(err, "from sign-in");
+      console.error("Error during sign-in:", err);
       throw err;
     } finally {
       setLoading(false);
@@ -53,7 +52,7 @@ export default function SignIn() {
       setLoading(true);
       await GandGlogin("google");
     } catch (err) {
-      console.log(err);
+      console.error("Error during Google login:", err);
       throw err;
     } finally {
       setLoading(false);
@@ -64,7 +63,7 @@ export default function SignIn() {
       setLoading(true);
       await GandGlogin("github");
     } catch (err) {
-      console.log(err);
+      console.error("Error during GitHub login:", err);
       throw err;
     } finally {
       setLoading(false);

@@ -67,7 +67,6 @@ export const POST = async (req: Request) => {
 export const GET = async (req: NextRequest) => {
   const body = req.nextUrl.searchParams;
   const productId = body.get("productId");
-  console.log(productId);
 
   if (!productId) {
     return new Response(JSON.stringify({ msg: "PRODUCT NOT FOUND!" }), {

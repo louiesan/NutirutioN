@@ -86,7 +86,7 @@ export const PATCH = async (
       },
     });
   } catch (err) {
-    console.log(err);
+    console.error("Error during goal update:", err);
     return new Response(JSON.stringify({ msg: "Failed to update goal" }), {
       status: 500,
       headers: {

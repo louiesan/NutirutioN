@@ -36,7 +36,7 @@ export default function SignUp() {
       setLoading(true);
       await GandGlogin("google");
     } catch (err) {
-      console.log(err);
+      console.error("Error during Google login:", err);
       throw err;
     } finally {
       setLoading(false);
@@ -47,7 +47,7 @@ export default function SignUp() {
       setLoading(true);
       await GandGlogin("github");
     } catch (err) {
-      console.log(err);
+      console.error("Error during GitHub login:", err);
       throw err;
     } finally {
       setLoading(false);

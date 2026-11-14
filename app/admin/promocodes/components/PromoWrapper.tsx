@@ -6,7 +6,6 @@ import { PromoDisplay } from "./PromoDisplay";
 export const PromoWrapper = ({ promocodes }: { promocodes: promocode[] }) => {
   const searchParams = useSearchParams();
   const query = searchParams?.get("query") || "";
-  console.log(query);
   const filtredPromo = promocodes.filter((promo: promocode) =>
     promo.promoCode.toLowerCase().includes(query.toLowerCase()),
   );

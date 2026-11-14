@@ -35,7 +35,6 @@ export const CodeCreator = ({ closAction }: { closAction: () => void }) => {
     }));
   }
 
-  console.log(promoCode);
 
   return (
     <div

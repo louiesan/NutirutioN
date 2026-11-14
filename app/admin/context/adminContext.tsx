@@ -64,7 +64,6 @@ export default function AdminContextProvide({
   const [highlight, setHighlight] = useState<string[]>([]);
   const [ingredient, setIngredient] = useState<string[]>([]);
 
-  console.log(product);
 
   async function deleteUser(id: string) {
     try {
@@ -150,14 +149,12 @@ export default function AdminContextProvide({
       });
       const data = await res.json();
       if (res.ok) {
-        console.log("UPDATED!");
         toast.success("Order Confirmed!", {
           duration: 2000,
           icon: "✅",
         });
         router.push("/admin/orders");
       } else {
-        console.log("ACCESS DENIED!");
       }
     } catch (err) {
       toast.error("Error Occured!!", {
@@ -178,15 +175,12 @@ export default function AdminContextProvide({
       });
       const data = await res.json();
       if (res.ok) {
-        console.log("DELETED!!");
         toast.success("Order Deleted!", {
           duration: 2000,
           icon: "🗑️",
         });
         router.push("/admin/orders");
-        console.log(data);
       } else {
-        console.log("ACCESS DENIED!");
       }
     } catch (err) {
       toast.error("Error Occured!!", {
@@ -211,7 +205,6 @@ export default function AdminContextProvide({
         icon: "✅",
       });
       router.push("/admin/products");
-      console.log(data);
     } catch (err) {
       toast.error("Error Occured!!", {
         duration: 2000,
@@ -234,7 +227,6 @@ export default function AdminContextProvide({
           icon: "🗑️",
         });
         router.push("/admin/products");
-        console.log(data);
       }
     } catch (err) {
       toast.error("Error Occured!!", {
@@ -248,7 +240,6 @@ export default function AdminContextProvide({
   }
 
   async function updateProduct(productData: ProductById) {
-    console.log(productData);
 
     try {
       const res = await fetch(apiUrl(`/api/products/${productData._id}`), {

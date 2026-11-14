@@ -4,16 +4,13 @@ import { NextRequest } from "next/dist/server/web/spec-extension/request";
 
 export const GET = async (req: NextRequest) => {
   const searchParams = await req.nextUrl.searchParams;
-  console.log(searchParams);
 
-  console.log("from url");
 
   await ConnectDB(process.env.MONGO_URI!);
   try {
     let filtred;
     const isFeautured = JSON.parse(searchParams?.get("isFeatured") || "false");
     const category = searchParams?.get("category");
-    console.log(isFeautured);
 
     if (isFeautured) {
       filtred = await Product.find({ "featured.isFeatured": true });
@@ -23,7 +20,6 @@ export const GET = async (req: NextRequest) => {
       filtred = await Product.find({});
     }
 
-    console.log(filtred);
 
     const products = filtred;
     if (!products) {
@@ -37,7 +33,6 @@ export const GET = async (req: NextRequest) => {
       headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
-    console.log(err);
 
     throw err;
   }
@@ -47,7 +42,6 @@ export const POST = async (req: Request) => {
   const body = await req.json();
   try {
     await ConnectDB(process.env.MONGO_URI!);
-    console.log("from route ", body);
 
     const product = await Product.create({ ...body });
     return new Response(JSON.stringify({ product: product }), {
@@ -55,7 +49,6 @@ export const POST = async (req: Request) => {
       headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
-    console.log(err);
 
     return new Response(JSON.stringify({ error: "Failed to create product" }), {
       status: 500,

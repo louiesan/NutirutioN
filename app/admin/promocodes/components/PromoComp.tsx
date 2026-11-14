@@ -16,7 +16,6 @@ export const PromoComp = ({ code }: { code: promocode }) => {
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
-      console.log("copy failed because", err);
     }
   }
 

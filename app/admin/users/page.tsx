@@ -8,7 +8,6 @@ export default async function page() {
   const data = await res.json();
 
   const users = data;
-  console.log(data);
 
   return (
     <main className="w-full h-fit ">

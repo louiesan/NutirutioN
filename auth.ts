@@ -40,19 +40,16 @@ export const {
     Credentials({
       async authorize(credentials) {
         if (!credentials.email || !credentials.password) return null;
-        console.log("credentials checked!", credentials);
 
         await ConnectDB(process.env.MONGO_URI!);
 
         const { email, password } = credentials;
 
-        console.log("credentials destructured!", email, password);
 
         const user = await yusre.findOne({ email });
 
         if (!user) return null;
 
-        console.log("user found!", user);
 
         const isMatch = await bcrypt.compare(
           password as string,
@@ -61,8 +58,6 @@ export const {
 
         if (!isMatch) return null;
 
-        console.log("password  mathced!");
-        console.log(user);
 
         return {
           id: user._id.toString(),
@@ -104,7 +99,6 @@ export const {
       user: User;
       account?: Account | null | undefined;
     }) {
-      console.log(user, "from signIn callback");
       if (account?.provider !== "github" && account?.provider !== "google")
         return true;
       //   ACCOUNT LINKING LOGIC
@@ -134,7 +128,6 @@ export const {
         existUser &&
         existUser.provider.every((p: any) => p.name !== account.provider)
       ) {
-        console.log("Updating user provider", account.provider);
         await yusre.updateOne(
           { _id: existUser._id },
           {
@@ -148,12 +141,10 @@ export const {
         );
         return true;
       }
-      console.log("googleProvider", existUser);
 
       return true;
     },
     async jwt({ token, user, account }) {
-      console.log(user, "from jwt");
 
       if (user) {
         token.id = user.id;
@@ -169,13 +160,10 @@ export const {
           token.id = oauthUser.id;
           token.role = oauthUser.role;
         }
-        console.log(token);
       }
       return token;
     },
     session({ session, token }) {
-      console.log(token);
-      console.log(session);
 
       if (token) {
         session.user.id = token.id as string;

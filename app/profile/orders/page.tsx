@@ -14,6 +14,8 @@ const poppins = Poppins({
 });
 export default async function Orders() {
   const session = await auth();
+  const incomingHeaders = await headers();
+  const mutableHeaders = new Headers(incomingHeaders);
   if (session?.user?.role === "admin") {
     redirect("/admin/dashboard");
   }
@@ -23,11 +25,10 @@ export default async function Orders() {
     redirect("/auth/sign-in");
   }
   const res = await fetch(apiUrl(`/api/orders/${id}`), {
-    headers: await headers(),
+    headers: mutableHeaders,
   });
   const data = await res.json();
   const orders = data;
-  console.log(orders);
 
   return (
     <main

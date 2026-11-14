@@ -90,7 +90,6 @@ export const ProductEditor = ({ product }: { product: ProductById }) => {
       setLoading(true);
       await updateProduct(productData);
     } catch (err) {
-      console.log(err);
 
       throw err;
     } finally {

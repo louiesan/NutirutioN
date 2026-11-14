@@ -6,7 +6,6 @@ export const serverEvents = new EventEmitter();
 serverEvents.on("orderConfirmed", notifyUser);
 
 function notifyUser(orderDetails: any) {
-  console.log("Order confirmed:", orderDetails);
   let destination = "";
 
   if (orderDetails.method === "delivery") {

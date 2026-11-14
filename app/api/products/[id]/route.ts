@@ -9,10 +9,8 @@ export const GET = async (
   await ConnectDB(process.env.MONGO_URI!);
   const param = await params;
   const { id } = param;
-  console.log(id);
 
   const product = await Product.find({ _id: id });
-  console.log(product);
 
   if (!product) {
     return new Response(JSON.stringify({ msg: "Product is not FOUND!" }), {
@@ -73,10 +71,8 @@ export const PUT = async (
   req: Request,
   { params }: { params: Promise<{ id: string }> },
 ) => {
-  console.log(params);
 
   const { id } = await params;
-  console.log(id);
 
   const session = await auth();
 
@@ -106,8 +102,6 @@ export const PUT = async (
       { returnDocument: "after", runValidators: true },
     );
     if (!product) {
-      console.log(body);
-      console.log(product);
 
       return new Response(JSON.stringify({ msg: "NOT FOUND!" }), {
         status: 404,

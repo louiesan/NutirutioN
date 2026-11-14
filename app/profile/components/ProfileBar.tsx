@@ -1,12 +1,10 @@
 "use client";
 import { Lato } from "next/font/google";
-import { Store, Dumbbell, LogOut } from "lucide-react";
+import { Store, LogOut } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { ShoppingBasket } from "lucide-react";
 import { CgMenuRightAlt, CgProfile } from "react-icons/cg";
 import { FaPaperclip } from "react-icons/fa6";
-import { GoGoal } from "react-icons/go";
 import Logo from "@/public/nutrlogo.png";
 import Image from "next/image";
 import { useState } from "react";

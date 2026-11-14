@@ -175,15 +175,12 @@ export const DELETE = async (
 };
 
 async function decrementStock(products: orderProduct[]) {
-  console.log("Decrement stock started!");
-
   try {
     // 1. Prepare a single bulk operation array
 
     const checkingProducts = await Product.find({
       _id: { $in: products.map((p) => p.productId) },
     });
-    console.log(checkingProducts);
 
     const bulkOps = products.map((product) => ({
       updateOne: {
@@ -204,8 +201,6 @@ async function decrementStock(products: orderProduct[]) {
         "One or more items could not be decremented due to insufficient stock.",
       );
     }
-
-    console.log("Decrement stock finished successfully!");
   } catch (error) {
     console.error("Failed to decrement stock:", error);
     throw error; // Re-throw to handle this failure in your order controller

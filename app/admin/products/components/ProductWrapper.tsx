@@ -6,7 +6,6 @@ import { ProductDisplay } from "./ProductDisplay";
 export const ProductWrapper = ({ products }: { products: product[] }) => {
   const searchParams = useSearchParams();
   const query = searchParams?.get("query") || "";
-  console.log(products);
 
   const filtredProduct = products.filter(
     (ele) =>

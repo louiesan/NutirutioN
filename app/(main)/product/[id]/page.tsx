@@ -57,7 +57,6 @@ export default async function productPage({
     getSimilarProduct<product[]>(apiUrl(`/api/products?category=Protein`)),
   ]);
 
-  console.log(similarProduct);
 
   // const res = await fetch(apiUrl(`/api/products/${id}`));
   // const data = await res.json();
@@ -65,8 +64,6 @@ export default async function productPage({
   // const revData = await revs.json();
   // const reviews = revData.reviews;
   // const product: ProductById = data[0];
-  console.log(product);
-  console.log(reviews);
 
   const item: cart = {
     id: product._id,
@@ -76,7 +73,6 @@ export default async function productPage({
     isBundle: false,
     quantity: 1,
   };
-  console.log(product.nutritionFacts);
 
   const nutKeys = Object.keys(
     product?.nutritionFacts,

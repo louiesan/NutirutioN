@@ -15,7 +15,6 @@ export const GET = async (request: Request) => {
       },
     });
   } catch (err) {
-    console.log(err);
     return new Response(JSON.stringify({ message: "Failed to fetch goals" }), {
       status: 500,
       headers: {
@@ -60,7 +59,7 @@ export const POST = async (req: Request) => {
       },
     });
   } catch (err) {
-    console.log(err);
+    console.error("Error during goal creation:", err);
     return new Response(JSON.stringify({ msg: "Failed to create goal" }), {
       status: 500,
       headers: {

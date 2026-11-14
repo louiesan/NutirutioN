@@ -8,7 +8,6 @@ export const POST = async (req: Request) => {
 
   try {
     const body = await req.json();
-    console.log(body);
     const { name, email, password } = body;
     if (!name || !email || !password)
       throw new Error("Please Provide A valid value");
@@ -28,7 +27,7 @@ export const POST = async (req: Request) => {
       },
     });
   } catch (err) {
-    console.log(err);
+    console.error(err);
 
     return new NextResponse(JSON.stringify(err), {
       status: 400,

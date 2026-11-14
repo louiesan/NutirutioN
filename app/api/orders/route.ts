@@ -50,7 +50,6 @@ export const GET = async (req: Request) => {
 export const POST = async (req: Request) => {
   await ConnectDB(process.env.MONGO_URI!);
   const body = await req.json();
-  console.log(body);
 
   try {
     //create new order var , initial it with order coming from the client
@@ -68,7 +67,6 @@ export const POST = async (req: Request) => {
 
     //getting the cart from the order!
     const cartItems = body.item;
-    console.log("OLD order", order);
     //seperating the product items , bundle items
     const productItems = cartItems.filter((e: any) => !e.isBundle);
     const bundleItems = cartItems.filter((e: any) => e.isBundle);
@@ -127,15 +125,12 @@ export const POST = async (req: Request) => {
     //handling discount
 
     // creating the order!
-    console.log("nnew order", order);
 
     const createdOrder = await Orders.create(order);
     // return new Response(JSON.stringify({ msg: "Order Submitted!" }), {
     //   status: 201,
     //   headers: { "Content-Type": "application/json" },
     // });
-
-    console.log(createdOrder);
 
     return new Response(
       JSON.stringify({ msg: "Order has been Placed!", createdOrder }),

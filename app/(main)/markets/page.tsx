@@ -19,7 +19,6 @@ export default async function Markets({
   const data = await res.json();
   const products: product[] = data.products;
 
-  // console.log(products);
 
   const { query, category, minprice, maxprice } = await searchParams;
 
@@ -31,7 +30,6 @@ export default async function Markets({
     maxprice,
   );
   const condition = products.every((e) => filtredProduct.includes(e));
-  console.log(condition);
 
   return (
     <main className="mt-18.25 text-white w-full h-full max-w-6xl mx-auto p-2.5">

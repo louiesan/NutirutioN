@@ -23,7 +23,6 @@ export const ReviewsMang = ({
   };
 }) => {
   const [openReviewForm, setOpenReviewForm] = useState(false);
-  console.log(reviews);
   return (
     <>
       {openReviewForm && (

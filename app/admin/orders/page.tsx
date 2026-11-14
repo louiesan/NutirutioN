@@ -23,7 +23,6 @@ export default async function AdminOrdersPage() {
 
   const orders = JSON.parse(JSON.stringify(await ordersQuery));
 
-  console.log(orders);
 
   return (
     <main className="w-full h-fit">
